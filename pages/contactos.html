@@ -53,7 +53,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="mb-5">
       <section class="bg-primary-subtle py-4">
         <h1 class="text-center marca">Contacto</h1>
       </section>
@@ -62,19 +62,25 @@
 <article class="col-12 col-md-6 mb-3">
   <form>
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      <label for="fullName" class="form-label">Nombre y apellido *</label>
+<input type="text" class="form-control" placeholder="Juan Perez" id="fullName" aria-describedby="nameHelp">
     </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+      <label for="exampleInputEmail1" class="form-label">Email *</label>
+      <input type="email" class="form-control" placeholder="juanperez@mail.com" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <div class="mb-3">
+      <label for="phoneNumber" class="form-label">Teléfono</label>
+<input type="tel" class="form-control" id="phoneNumber" placeholder="Ej: 1122334455">
+
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="mb-3">
+      <label for="consulta" class="form-label">Ingrese su consulta *</label>
+      <textarea id="consulta" class="form-control" rows="4" minlength="10" maxlength="250" required></textarea>
+      <div id="emailHelp" class="form-text">Los campos con (*) son obligatorios</div>
+  </div>
+    
+    <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
 </article>
 <article class="col-12 col-md-6 mb-3">
